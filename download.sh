@@ -5,7 +5,7 @@
 mkdir -p scriptWorking && cd scriptWorking
 
 # Download the specified song / album with spotdl in m4a format by default
-spotdl -of m4a $1
+spotdl --of m4a $@
 
 # because spotdl doesn't remove it for some reason
 rm Temp .cache -r
